@@ -1,0 +1,16 @@
+{
+  "name": "SKIP hatebu",
+  "version": "0.0.2",
+  "description": "skip hatena bookmark.",
+  "icons": { "48": "icon.png" },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "http://b.hatena.ne.jp/entry/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
